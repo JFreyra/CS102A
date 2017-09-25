@@ -44,6 +44,10 @@ int main(void){
       floats and other longer numbers cause memory issues */
    scanf("%d %d %d", &a, &b, &c);
    printf("Inputs: a = %d, b = %d, c = %d\n\n",a,b,c);
+   if(a == 0){
+     printf("a cannot be 0\n");
+     return 0;
+   }
 
    /* Assigns determinant of given values to det */
    det = determinant(a,b,c);
